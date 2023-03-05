@@ -1,129 +1,147 @@
 * {
     box-sizing: border-box;
-    padding: 0;
+
+
+}
+
+body {
+    font-family: Arial;
     margin: 0;
-    list-style: none;
-
-}
-
-/* h1 {
-    border: 5px solid black;
-    background-color: #6432a8;
-    color: #ffffff;
-    padding: 20px;
-    margin-right: 33.5em;
-    display: inline-block;
-    margin-left: 10px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 7px;     
-   
-    
-    
-    
-} */
-
-/* .header {
-    background-color: #9999ff;
-    border: 4px solid violet;
-    display: inline-flex; 
-    height: 80px;
-    width: 100%;
-    
-} */
-
-/* nav ul {
-    list-style: none;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-right: 1em;
-    font-size: 16px;
-
-} */
-
-/* header ul {
-    margin:  9.96px  10px 9.96px; 
-    border-bottom: 5px solid #3333cc;
-    display: inline-flex;
-    list-style: none;
-
-}
-
-header li {
-    margin: 10px;
-    border-bottom: 5px solid #3333cc;
-    
-} */
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-nav {
-    background: #6432a8;
-    height: 100px;
-    width: 100%;
-}
-
-label.name {
-    color: #ffffff;
-    font-size: 35px;
-    line-height: 100px;
-    padding: 0 100px;
-    font-weight: bold;
-    
-}
-
-nav ul {
-    float: right;
-    /* margin-right: 20px;*/
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 4px;
-    text-transform: uppercase;
-}
-
-nav a {
-    text-decoration: none;
-
-}
-
-a:hover {
-    background-color: #6666ff;
-    
-}
-
-/* @media  screen and (max-width= 938px) {
-    nav {                 
-    background: #6432a8;
-    height: 100px;
-    width: 100%;
-} */
-
-@media screen and (max-width: 937px) {
-   
-    /* Change the header color */
-    ul {
-      background-color: #6432a8;
-      display: inline-block;
-      padding: 0px 220px 0px 300px;
-      margin: 0%;
-    }
-    .name {
-        padding: auto;
-        text-align: center;
-    }
   }
   
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #13293d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+  }
   
+
+
+
+h1 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+
+  }
+  
+  nav a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 20px;
+  }
+  
+  section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sample-img {
+    width: auto;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  div {
+    /* justify-content: center;
+    flex-direction: column; */
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+    /* .work {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        border: 4px solid black;
+    }   */
+
+    .small-size {
+        /* border: 3px solid blue;
+        height: 10em;
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3em 30px 1em;
+        flex-direction: row;
+        justify-content: center; */
+        display: grid;
+        place-items: center;
+    }
+
+    .large-size {
+        border: 3px solid red;
+        height: 25em;
+        width: 50em;
+        margin: 0em 60px 1em;
+    }
+
+/* .work {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+main section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: inherit;
+}
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
+  }
+
