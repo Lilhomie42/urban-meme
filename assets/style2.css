@@ -2,17 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
+    /* background-color: #24252a; */
 
 }
 
 body {
-    height: 1000px;
+    height: fit-content;
     width: auto;
 } 
 
 
-li, a {
+li, a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -29,7 +29,7 @@ header {
 
 }
 
-header, nav, ul, li, a {
+header, nav, ul, li, .nav-links  {
     background-color: #A64DE3;
 }
 
@@ -60,7 +60,7 @@ nav li a:hover {
     color: lightblue;
 
 }
-aside{
+/* aside{
     flex: 1;
     color: #A64DE3;
     padding: 20px;
@@ -69,6 +69,8 @@ aside{
   main{
     display: flex;
     flex-wrap: wrap;
+    height: max-content;
+    width: auto;
   }
 
   section {
@@ -77,24 +79,60 @@ aside{
     padding: 20px;
     text-align: center;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center;
     margin: 20px;
-    display: inline;
-  }
+    display: flex; */
+  /* }
 .projects {
     border: 3px solid blue;
     padding: 20px;
     background-color: #ffffff;
-    height: 200px;
+    height: fit-content;
     width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 .info {
-    
+    border:3px solid #A64DE3;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #A64DE3;
+    color: #fff;
+  }
+
+.projects div {
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.large-size {
+    border: 3px solid red;
+    height: 25em;
+    width: auto;
+
+}
+
+.small-size {
+    border: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    height: 10em;
+    width: 20em;
+
+    
+/* } 
 @media screen and (max-width: 768px) {
      h1, nav {
         align-items: center;
         flex-direction: column;   
     }
-}
+} */
